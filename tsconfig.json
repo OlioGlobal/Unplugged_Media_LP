@@ -28,6 +28,6 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/app/components/Testimonial.jsx"
-  ],
+, "src/app/api/submit-lead/route.js"  ],
   "exclude": ["node_modules"]
 }
