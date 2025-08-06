@@ -1,9 +1,8 @@
-("");
 import React from "react";
 import Image from "next/image";
 import { Link as ScrollLink } from "react-scroll";
 
-const Header = ({ openPopup }) => {
+const Header = ({ openPopup }: { openPopup: () => void }) => {
   return (
     <header className="fixed top-0 left-0 w-full bg-white border-b-[1px] border-[#B1B1B1] z-50">
       <div className="max pad py-2">

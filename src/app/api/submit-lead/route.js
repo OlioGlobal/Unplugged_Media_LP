@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
-export async function POST(request: NextRequest) {
+export async function POST(request) {
   try {
     const body = await request.json();
     const { name, mobile, email, companyName, utm } = body;
@@ -76,7 +76,7 @@ export async function POST(request: NextRequest) {
 }
 
 // Function to send email notification
-async function sendEmailNotification(leadData: any) {
+async function sendEmailNotification(leadData) {
   // Create transporter
   const transporter = nodemailer.createTransport({
     service: "gmail",
@@ -85,13 +85,6 @@ async function sendEmailNotification(leadData: any) {
       pass: process.env.EMAIL_PASS, // Your Gmail app password
     },
   });
-
-  // Format UTM parameters for email
-  const utmInfo =
-    Object.entries(leadData.utm)
-      .filter(([key, value]) => value)
-      .map(([key, value]) => `${key}: ${value}`)
-      .join("\n") || "No UTM parameters";
 
   // Email content
   const mailOptions = {
@@ -124,8 +117,12 @@ async function sendEmailNotification(leadData: any) {
 }
 
 // Function to send data to Google Sheets
-async function sendToGoogleSheets(data: any) {
-  const response = await fetch(process.env.NEXT_PUBLIC_GOOGLE_SCRIPT_URL, {
+async function sendToGoogleSheets(data) {
+  const url = process.env.NEXT_PUBLIC_GOOGLE_SCRIPT_URL;
+  if (!url) {
+    throw new Error("Missing Google Script URL in environment variables.");
+  }
+  const response = await fetch(url, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

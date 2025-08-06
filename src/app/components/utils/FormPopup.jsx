@@ -219,7 +219,7 @@ export default function FormPopup({ isOpen, onClose }) {
           <button
             type="submit"
             disabled={submitting}
-            className="bg-[#DD3333] hover:bg-[#be1c1c] text-[18px] py-[9px] px-[20px] cursor-pointer text-white font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
+            className="bg-[#DD3333] hover:bg-[#be1c1c] text-[18px] py-[9px] px-[0px] cursor-pointer text-white font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {submitting ? "Submitting..." : "Submit"}
           </button>

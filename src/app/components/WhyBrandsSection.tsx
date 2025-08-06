@@ -2,7 +2,11 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { Element } from "react-scroll";
-export default function BrandVideoSection({ openPopup }) {
+export default function BrandVideoSection({
+  openPopup,
+}: {
+  openPopup: () => void;
+}) {
   const [isPlaying, setIsPlaying] = useState(false);
 
   return (

@@ -7,7 +7,7 @@ import { Element } from "react-scroll";
 
 const TestimonialCarousel = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
-  const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
+  const [scrollSnaps, setScrollSnaps] = useState([]);
 
   const options = {
     loop: true,
@@ -102,7 +102,7 @@ const TestimonialCarousel = () => {
   };
 
   // Calculate which dot should be active based on current slide
-  const getCurrentDotIndex = (slideIndex: number) => {
+  const getCurrentDotIndex = (slideIndex) => {
     const slidesPerView = getSlidesPerView();
     return Math.floor(slideIndex / slidesPerView);
   };
@@ -114,7 +114,7 @@ const TestimonialCarousel = () => {
   };
 
   const scrollToPage = useCallback(
-    (dotIndex: number) => {
+    (dotIndex) => {
       if (emblaApi) {
         const slidesPerView = getSlidesPerView();
         const targetSlide = dotIndex * slidesPerView;

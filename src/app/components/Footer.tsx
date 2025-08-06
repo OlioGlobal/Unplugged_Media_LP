@@ -1,6 +1,6 @@
 import React from "react";
 
-const Footer = ({ openPopup }) => {
+const Footer = ({ openPopup }: { openPopup: () => void }) => {
   return (
     <div className="relative overflow-hidden">
       {/* 🌄 Background Image */}
@@ -14,7 +14,7 @@ const Footer = ({ openPopup }) => {
       <section className="rm pad max flex items-center justify-center relative z-20">
         <div className="text-center text-white max-w-4xl px-5">
           <h1 className="font-bold text-[38px] sm:text-[42px] md:text-[48px] lg:text-[54px] leading-[120%] font-epilogue">
-            Ready to Script Your Brand's Visual Journey?
+            Ready to Script Your Brand&apos;s Visual Journey?
           </h1>
           <p className="text-[15px] md:text-[16px] lg:text-[18px] text-[#FFFFFFBF] mt-2">
             From industrial walkthroughs to cinematic brand films.

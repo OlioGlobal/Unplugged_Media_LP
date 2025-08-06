@@ -3,7 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import React from "react";
 
-const HeroSection = ({ openPopup }) => {
+const HeroSection = ({ openPopup }: { openPopup: () => void }) => {
   const [isPlaying, setIsPlaying] = useState(false);
   return (
     <section className="md:h-screen flex bg-[url('/bg.png')] bg-cover bg-center text-white">
