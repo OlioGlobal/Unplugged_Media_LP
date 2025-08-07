@@ -12,7 +12,7 @@ const HeroSection = ({ openPopup }: { openPopup: () => void }) => {
         <div className="">
           <div className="md:max-w-[34rem] flex z-20 flex-col items-start gap-6">
             <h2 className="font-bold z-20 text-[38px] sm:text-[42px] md:text-[48px] lg:text-[54px] leading-[120%] font-epilogue">
-              India's #1 Choice for{" "}
+              India&apos;s #1 Choice for{" "}
               <span className="bg-gradient-to-b from-white to-[#B5B5B5] bg-clip-text text-transparent">
                 High-Converting Videos
               </span>

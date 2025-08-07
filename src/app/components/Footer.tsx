@@ -17,8 +17,8 @@ const Footer = ({ openPopup }: { openPopup: () => void }) => {
             Ready to Transform Your Story?
           </h2>
           <p className="text-[15px] md:text-[16px] lg:text-[18px] text-[#FFFFFFBF] mt-2">
-            Let's create videos that don't just look amazing, they deliver
-            results.
+            Let&apos;s create videos that don&apos;t just look amazing, they
+            deliver results.
           </p>
           <button
             onClick={openPopup}

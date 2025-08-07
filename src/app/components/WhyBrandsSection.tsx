@@ -63,9 +63,10 @@ export default function BrandVideoSection({
               for your brand. Why Smart Why Smart Brands Choose Unplug
               InfinityBrands Choose Unplug Infinity
               <br className="hidden md:block" />
-              We don't just create videos for our clients, we become strategic
-              partners in their success story. That's why industry leaders trust
-              us to turn their boldest ideas into their biggest wins.
+              We don&apos;t just create videos for our clients, we become
+              strategic partners in their success story. That&apos;s why
+              industry leaders trust us to turn their boldest ideas into their
+              biggest wins.
             </p>
 
             <button
