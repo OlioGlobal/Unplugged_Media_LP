@@ -12,21 +12,22 @@ const HeroSection = ({ openPopup }: { openPopup: () => void }) => {
         <div className="">
           <div className="md:max-w-[34rem] flex z-20 flex-col items-start gap-6">
             <h2 className="font-bold z-20 text-[38px] sm:text-[42px] md:text-[48px] lg:text-[54px] leading-[120%] font-epilogue">
-              Transforming Ideas into{" "}
+              India's #1 Choice for{" "}
               <span className="bg-gradient-to-b from-white to-[#B5B5B5] bg-clip-text text-transparent">
-                Stunning Visual Stories
+                High-Converting Videos
               </span>
             </h2>
 
             <p className=" paraFont text-[#FFFFFF] font-normal  ">
-              From industrial walkthroughs to cinematic brand films — Unplug
-              Infinity crafts visuals that speak, sell, and stay.
+              We transform your brand story into powerful visual content that
+              speaks to your audience, builds trust, and drives action. Trusted
+              by 500+ brands across India.
             </p>
             <button
               onClick={openPopup}
               className="paraText cursor-pointer text-[#DD3333]  hover:bg-[#e9e7e7] py-[9px] px-[21px] rounded-[5px] font-bold bg-white"
             >
-              Enquire Now
+              Get Started Now
             </button>
           </div>
         </div>

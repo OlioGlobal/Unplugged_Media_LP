@@ -30,9 +30,11 @@ const StatsSection = () => {
     <section className="bg-[#EAE6E3] rm">
       <div className="max pad text-center">
         {/* Heading */}
-        <h2 className="h2Text">Trusted by Innovators Across Sectors</h2>
+        <h2 className="h2Text">Proven Track Record of Visual Excellence</h2>
         <p className="hPara mt-2">
-          From industrial walkthroughs to cinematic brand films.
+          Serving startups to Fortune 500 companies, from industrial showcases
+          to cinematic brand stories, we consistently deliver results that
+          matter.
         </p>
 
         {/* Stats Grid */}

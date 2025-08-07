@@ -64,7 +64,8 @@ export default function WhatWeCreate() {
               What We Create
             </h2>
             <p className=" mt-2 text-[15px] md:text-[16px] lg:text-[18px] text-[#ffffff] font-normal leading-[160%]">
-              From industrial walkthroughs to cinematic brand films.
+              From industrial showcases to cinematic campaigns, we bring your
+              vision to life through powerful visual storytelling.
             </p>
           </div>
 

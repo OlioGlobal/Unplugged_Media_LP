@@ -157,9 +157,10 @@ const TestimonialCarousel = () => {
       <section className="rm bg-[#EAE6E3]">
         <div className="max pad">
           <div className="text-center mb-12">
-            <h2 className="h2Text">Client Testimonials</h2>
+            <h2 className="h2Text">What Our Clients Say</h2>
             <p className="hPara mt-2">
-              From industrial walkthroughs to cinematic brand films.
+              Don't just take our word for it. Hear from brands who've
+              experienced the Unplug Infinity difference.
             </p>
           </div>
 

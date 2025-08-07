@@ -13,11 +13,12 @@ const Footer = ({ openPopup }: { openPopup: () => void }) => {
       {/* 🌟 Main Content */}
       <section className="rm pad max flex items-center justify-center relative z-20">
         <div className="text-center text-white max-w-4xl px-5">
-          <h1 className="font-bold text-[38px] sm:text-[42px] md:text-[48px] lg:text-[54px] leading-[120%] font-epilogue">
-            Ready to Script Your Brand&apos;s Visual Journey?
-          </h1>
+          <h2 className="font-bold text-[38px] sm:text-[42px] md:text-[48px] lg:text-[54px] leading-[120%] font-epilogue">
+            Ready to Transform Your Story?
+          </h2>
           <p className="text-[15px] md:text-[16px] lg:text-[18px] text-[#FFFFFFBF] mt-2">
-            From industrial walkthroughs to cinematic brand films.
+            Let's create videos that don't just look amazing, they deliver
+            results.
           </p>
           <button
             onClick={openPopup}

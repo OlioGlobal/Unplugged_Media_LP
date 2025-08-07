@@ -54,12 +54,18 @@ export default function BrandVideoSection({
           </div>
 
           <div className="space-y-6">
-            <h2 className="h2Text">Why Brands Choose Unplug Infinity</h2>
+            <h2 className="h2Text">Why Smart Brands Choose Unplug Infinity</h2>
 
             <p className="hPara">
-              We don’t just shoot videos — we craft visual stories that sell,
-              simplify, and stay memorable. From industrial walkthroughs to
-              brand films, our work turns complex ideas into compelling motion.
+              While others create videos, we engineer visual experiences that
+              drive growth. Our unique blend of cinematic storytelling and
+              marketing strategy ensures every frame delivers measurable impact
+              for your brand. Why Smart Why Smart Brands Choose Unplug
+              InfinityBrands Choose Unplug Infinity
+              <br className="hidden md:block" />
+              We don't just create videos for our clients, we become strategic
+              partners in their success story. That's why industry leaders trust
+              us to turn their boldest ideas into their biggest wins.
             </p>
 
             <button
