@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { Link as ScrollLink } from "react-scroll";
 
 const Header = ({ openPopup }: { openPopup: () => void }) => {
@@ -8,16 +9,18 @@ const Header = ({ openPopup }: { openPopup: () => void }) => {
       <div className="max pad py-2">
         <div className="flex justify-between items-center">
           <div className="flex-shrink-0">
-            <div className="flex items-center space-x-2">
-              <Image
-                src="/logo.png"
-                alt="UNPLUG Logo"
-                width={100}
-                height={80}
-                className="object-contain"
-                priority
-              />
-            </div>
+            <Link href={"/"}>
+              <div className="flex items-center space-x-2">
+                <Image
+                  src="/logo.png"
+                  alt="UNPLUG Logo"
+                  width={100}
+                  height={80}
+                  className="object-contain"
+                  priority
+                />
+              </div>
+            </Link>
           </div>
 
           <nav className="hidden md:flex items-center space-x-8">

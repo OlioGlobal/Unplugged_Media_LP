@@ -33,7 +33,7 @@ const TestimonialCarousel = () => {
       text: "Their dedication, precision, and innovative approach turned our vision into a stunning reality.",
       name: "Prajakta",
       title: "Marketing Manager",
-      avatar: "/images/avatar/prajakta_avatar.png",
+      avatar: "/images/avatar/Prajakta_avatar.png",
     },
     {
       id: 2,

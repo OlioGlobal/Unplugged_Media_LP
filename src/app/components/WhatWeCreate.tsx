@@ -74,7 +74,7 @@ export default function WhatWeCreate() {
                 key={service.id}
                 whileHover={{ scale: 1.05 }}
                 transition={{ type: "spring", stiffness: 50 }}
-                className="relative rounded-xl cursor-pointer overflow-hidden bg-gray-200 aspect-[3/4] flex items-center justify-center shadow-lg"
+                className="relative rounded-xl cursor-pointer overflow-hidden  aspect-[3/4] flex items-center justify-center shadow-lg"
               >
                 <Image
                   src={service.image}
