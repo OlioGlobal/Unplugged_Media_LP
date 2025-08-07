@@ -43,5 +43,5 @@ h3 {
   @apply text-[15px] md:text-[16px] lg:text-[18px] text-[#070728BF] font-normal leading-[160%];
 }
 .rm {
-  @apply py-8 sm:py-10 md:py-12 lg:py-14;
+  @apply py-8 sm:py-10 md:py-12 lg:py-16;
 }
