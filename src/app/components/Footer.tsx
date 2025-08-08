@@ -24,7 +24,7 @@ const Footer = ({ openPopup }: { openPopup: () => void }) => {
           <h2 className="font-bold text-[36px] sm:text-[42px] md:text-[48px] lg:text-[54px] leading-[120%] font-epilogue">
             Ready to Transform Your Story?
           </h2>
-          <p className="text-[15px] md:text-[16px] lg:text-[18px] text-[#ffffffcc] mt-4 leading-relaxed">
+          <p className="text-[15px] md:text-[16px] lg:text-[18px] text-[#ffffffcc] mt-4 leading-relaxed wrapText">
             Let’s collaborate to craft videos that not only captivate but also
             convert. Elevate your brand with compelling visuals.
           </p>

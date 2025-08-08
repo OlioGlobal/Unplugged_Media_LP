@@ -158,7 +158,7 @@ const TestimonialCarousel = () => {
         <div className="max pad">
           <div className="text-center mb-12">
             <h2 className="h2Text">What Our Clients Say</h2>
-            <p className="hPara mt-2">
+            <p className="hPara mt-2 wrapText">
               Don't just take our word for it. Hear from brands who've
               experienced the Unplug Infinity difference.
             </p>
@@ -207,8 +207,8 @@ const TestimonialCarousel = () => {
           <div className="flex justify-center items-center mt-8 space-x-2">
             {Array.from({ length: totalDots }).map((_, index) => (
               <button
-                key={index}
                 type="button"
+                key={index}
                 onClick={() => scrollToPage(index)}
                 className={`w-[14px] h-[14px] cursor-pointer rounded-full transition-all duration-300 ${
                   index === currentDotIndex

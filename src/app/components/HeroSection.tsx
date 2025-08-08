@@ -86,7 +86,7 @@ const HeroSection = ({ openPopup }: { openPopup: () => void }) => {
                 onClick={() => setIsPlaying(true)}
               >
                 <Image
-                  src={`https://img.youtube.com/vi/1wpuOOh5YJ0/maxresdefault.jpg`}
+                  src={`/images/stock.png`}
                   alt="Brand Video Thumbnail"
                   fill
                   className="object-cover scale-118"
@@ -100,14 +100,15 @@ const HeroSection = ({ openPopup }: { openPopup: () => void }) => {
                 </div>
               </div>
             ) : (
-              <iframe
-                className="w-full scale-3d h-full rounded-lg shadow-lg"
-                src="https://www.youtube.com/embed/1wpuOOh5YJ0?autoplay=1&rel=0&modestbranding=1&controls=0&showinfo=0&fs=0&disablekb=1"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
+              <video
+                className="w-full h-full rounded-lg shadow-lg object-cover"
+                src="/video/stock.mp4"
+                autoPlay
+                muted
+                playsInline
+              >
+                Your browser does not support the video tag.
+              </video>
             )}
           </div>
         </motion.div>

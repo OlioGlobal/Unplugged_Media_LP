@@ -40,8 +40,12 @@ const services = [
   {
     id: 6,
     image: "/images/service/s6.png",
-    logo: "/images/service/s6Logo.png",
-    name: "AUDIO SERVICES",
+    logo: "/images/service/s6logo.png",
+    name: (
+      <span>
+        AUDIO <br /> SERVICES
+      </span>
+    ),
   },
 ];
 
@@ -81,10 +85,10 @@ const WhatWeCreate: FC = () => {
         <section className="text-white max pad rm">
           {/* Header */}
           <div className="text-center mb-10">
-            <h2 className="text-[34px] sm:text-[38px] md:text-[44px] lg:text-[48px] text-white font-bold leading-[120%]">
+            <h2 className="text-[32px] sm:text-[34px] md:text-[38px] lg:text-[42px] text-white font-bold leading-[120%]">
               What We Create
             </h2>
-            <p className="mt-2 text-[15px] md:text-[16px] lg:text-[18px] text-white font-normal leading-[160%]">
+            <p className="mt-2 text-[15px] md:text-[16px] lg:text-[18px] text-white font-normal leading-[160%] wrapText">
               From industrial showcases to cinematic campaigns, we bring your
               vision to life through powerful visual storytelling.
             </p>
@@ -107,7 +111,7 @@ const WhatWeCreate: FC = () => {
               >
                 <Image
                   src={service.image}
-                  alt={service.name}
+                  alt={service.name as string}
                   width={500}
                   height={500}
                   className="object-contain transition duration-300 ease-in-out"

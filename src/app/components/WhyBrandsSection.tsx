@@ -71,14 +71,17 @@ export default function BrandVideoSection({
                 </motion.div>
               </div>
             ) : (
-              <iframe
-                className="w-full h-full rounded-lg shadow-lg"
-                src="https://www.youtube.com/embed/1wpuOOh5YJ0?autoplay=1&rel=0&modestbranding=1&controls=0&showinfo=0&fs=0&disablekb=1"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
+              <video
+                className="w-full h-full rounded-lg shadow-lg object-cover"
+                style={{ aspectRatio: "16/9" }}
+                src="/video/unplugged_intro.mp4"
+                autoPlay
+                muted
+                controls
+                playsInline
+              >
+                Your browser does not support the video tag.
+              </video>
             )}
           </motion.div>
 

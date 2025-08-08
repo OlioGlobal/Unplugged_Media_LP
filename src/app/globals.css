@@ -37,11 +37,14 @@ h3 {
   @apply text-[18px] text-[#070728] hover:text-[#222255] font-semibold;
 }
 .h2Text {
-  @apply text-[34px] sm:text-[38px] md:text-[44px] lg:text-[48px] text-[#070728] font-bold leading-[120%];
+  @apply text-[32px] sm:text-[34px] md:text-[38px] lg:text-[42px] text-[#070728] font-bold leading-[120%];
 }
 .hPara {
   @apply text-[15px] md:text-[16px] lg:text-[18px] text-[#070728BF] font-normal leading-[160%];
 }
 .rm {
   @apply py-8 sm:py-10 md:py-12 lg:py-16;
+}
+.wrapText {
+  @apply max-w-2xl mx-auto;
 }

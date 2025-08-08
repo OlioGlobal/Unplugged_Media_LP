@@ -43,7 +43,7 @@ const itemVariants: Variants = {
 const StatsSection: React.FC = () => {
   return (
     <section className="bg-[#EAE6E3] rm">
-      <div className="max pad text-center">
+      <div className="max pad text-center flex flex-col justify-center">
         {/* Heading */}
         <motion.h2
           className="h2Text"
@@ -56,7 +56,7 @@ const StatsSection: React.FC = () => {
         </motion.h2>
 
         <motion.p
-          className="hPara mt-2"
+          className="hPara mt-2 wrapText"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: [0.25, 0.8, 0.25, 1], delay: 0.1 }}
@@ -69,7 +69,7 @@ const StatsSection: React.FC = () => {
 
         {/* Stats Grid */}
         <motion.div
-          className="mt-10 md:mt-16 grid grid-cols-2 md:grid-cols-4 gap-10"
+          className="mt-10 md:mt-16 grid grid-cols-2 md:grid-cols-4 gap-10 md:px-[6%]"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
