@@ -86,27 +86,28 @@ const HeroSection = ({ openPopup }: { openPopup: () => void }) => {
                 onClick={() => setIsPlaying(true)}
               >
                 <Image
-                  src="/images/stock.png"
+                  src={`https://img.youtube.com/vi/1wpuOOh5YJ0/maxresdefault.jpg`}
                   alt="Brand Video Thumbnail"
                   fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="object-cover scale-118"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
                 <div className="absolute inset-0 bg-black/30" />
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="backdrop-blur-sm p-6 rounded-full shadow-lg transition-all duration-300 group-hover:scale-110">
+                  <div className=" rounded-full shadow-lg transition-all duration-300 group-hover:scale-110">
                     <Image src="/play.png" alt="Play" width={45} height={45} />
                   </div>
                 </div>
               </div>
             ) : (
-              <video
-                src="/video/stock.mp4"
-                autoPlay
-                controlsList="nodownload nofullscreen noremoteplayback"
-                disablePictureInPicture
-                onContextMenu={(e) => e.preventDefault()}
-                className="w-full h-full object-cover rounded-lg"
-              />
+              <iframe
+                className="w-full scale-3d h-full rounded-lg shadow-lg"
+                src="https://www.youtube.com/embed/1wpuOOh5YJ0?autoplay=1&rel=0&modestbranding=1&controls=0&showinfo=0&fs=0&disablekb=1"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
             )}
           </div>
         </motion.div>

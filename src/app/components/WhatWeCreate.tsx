@@ -9,42 +9,40 @@ import type { TargetAndTransition } from "framer-motion";
 const services = [
   {
     id: 1,
-    image: "/camera.png",
-    logo: "/starLogo.png",
+    image: "/images/service/s1.png",
+    logo: "/images/service/s1Logo.png",
     name: "VIDEO PRODUCTION",
   },
   {
     id: 2,
-    image: "/camera.png",
-    logo: "/starLogo.png",
+    image: "/images/service/s2.png",
+    logo: "/images/service/s2Logo.png",
     name: "ANIMATION SERVICES",
   },
   {
     id: 3,
-    image: "/camera.png",
-    logo: "/starLogo.png",
+    image: "/images/service/s3.png",
+    logo: "/images/service/s3Logo.png",
     name: "WEBSITE & BRANDING",
   },
   {
     id: 4,
-    image: "/camera.png",
-    logo: "/starLogo.png",
+    image: "/images/service/s4.png",
+    logo: "/images/service/s4Logo.png",
     name: "AUGMENTED & VIRTUAL REALITY",
   },
   {
     id: 5,
-    image: "/camera.png",
-    logo: "/starLogo.png",
+    image: "/images/service/s5.png",
+    logo: "/images/service/s5Logo.png",
     name: "PRODUCT PHOTOSHOOT",
   },
   {
     id: 6,
-    image: "/camera.png",
-    logo: "/starLogo.png",
+    image: "/images/service/s6.png",
+    logo: "/images/service/s6Logo.png",
     name: "AUDIO SERVICES",
   },
-  { id: 7, image: "/camera.png", logo: "/starLogo.png", name: "Service Name" },
-  { id: 8, image: "/camera.png", logo: "/starLogo.png", name: "Service Name" },
 ];
 
 const WhatWeCreate: FC = () => {
@@ -95,12 +93,12 @@ const WhatWeCreate: FC = () => {
           {/* Grid */}
           <div
             ref={ref}
-            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8"
           >
             {services.map((service, index) => (
               <motion.div
                 key={service.id}
-                className="relative rounded-xl cursor-pointer overflow-hidden aspect-[3/4] flex items-center justify-center shadow-lg"
+                className="relative rounded-[5px] cursor-pointer overflow-hidden  flex items-center justify-center shadow-lg"
                 custom={index}
                 variants={cardVariants}
                 initial="hidden"
@@ -110,20 +108,20 @@ const WhatWeCreate: FC = () => {
                 <Image
                   src={service.image}
                   alt={service.name}
-                  fill
-                  className="object-cover transition duration-300 ease-in-out"
-                  priority
+                  width={500}
+                  height={500}
+                  className="object-contain transition duration-300 ease-in-out"
                 />
                 <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center">
-                  <div className="bg-[#DD3333] rounded-full w-16 h-16 flex items-center justify-center mb-2 shadow-md">
+                  <div className="bg-[#DD3333] rounded-full w-18 h-18 flex items-center justify-center mb-2 shadow-md">
                     <Image
                       src={service.logo}
                       alt="Service Logo"
-                      width={44}
-                      height={44}
+                      width={46}
+                      height={46}
                     />
                   </div>
-                  <span className="text-white font-semibold text-[16px] text-center drop-shadow-sm">
+                  <span className="text-white font-semibold text-[18px] text-center drop-shadow-sm">
                     {service.name}
                   </span>
                 </div>

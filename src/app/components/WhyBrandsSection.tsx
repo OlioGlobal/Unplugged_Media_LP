@@ -47,14 +47,16 @@ export default function BrandVideoSection({
           >
             {!isPlaying ? (
               <div
-                className="relative w-full h-full cursor-pointer group"
+                className="relative w-full cursor-pointer group"
+                style={{ aspectRatio: "16/9" }}
                 onClick={() => setIsPlaying(true)}
               >
                 <Image
-                  src="/images/stock.png"
+                  src={`https://img.youtube.com/vi/1wpuOOh5YJ0/maxresdefault.jpg`}
                   alt="Brand Video Thumbnail"
                   fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="object-cover scale-120"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
                 <div className="absolute inset-0 bg-black/20" />
 
@@ -63,20 +65,20 @@ export default function BrandVideoSection({
                   whileHover={{ scale: 1.1 }}
                   transition={{ type: "spring", stiffness: 180, damping: 8 }}
                 >
-                  <div className="backdrop-blur-sm p-6 rounded-full shadow-lg">
-                    <Image src="/play.png" alt="play" width={45} height={45} />
+                  <div className="">
+                    <Image src="/play.png" alt="play" width={35} height={35} />
                   </div>
                 </motion.div>
               </div>
             ) : (
-              <video
-                src="/video/stock.mp4"
-                autoPlay
-                controlsList="nodownload nofullscreen noremoteplayback"
-                disablePictureInPicture
-                onContextMenu={(e) => e.preventDefault()}
-                className="w-full h-full object-cover"
-              />
+              <iframe
+                className="w-full h-full rounded-lg shadow-lg"
+                src="https://www.youtube.com/embed/1wpuOOh5YJ0?autoplay=1&rel=0&modestbranding=1&controls=0&showinfo=0&fs=0&disablekb=1"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
             )}
           </motion.div>
 
@@ -104,6 +106,7 @@ export default function BrandVideoSection({
             </p>
 
             <button
+              type="button"
               onClick={openPopup}
               className="bg-[#DD3333] hover:bg-[#be1c1c] text-[18px] py-[9px] px-[12px] rounded-[5px] text-white cursor-pointer"
             >
