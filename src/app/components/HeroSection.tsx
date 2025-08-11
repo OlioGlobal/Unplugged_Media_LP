@@ -34,10 +34,10 @@ const HeroSection = ({ openPopup }: { openPopup: () => void }) => {
   };
 
   return (
-    <section className="md:h-screen flex bg-[url('/bg.png')] bg-cover bg-center text-white">
+    <section className="lg:h-screen flex bg-[url('/bg.png')] bg-cover bg-center text-white">
       <motion.div
         ref={ref}
-        className="max pad w-full flex gap-5 py-8 mt-22 flex-col md:grid md:grid-cols-2 md:gap-8 items-center"
+        className="max pad w-full flex gap-5 py-8 mt-22 flex-col lg:grid md:grid-cols-2 md:gap-8 items-center"
         variants={containerVariants}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
@@ -45,7 +45,7 @@ const HeroSection = ({ openPopup }: { openPopup: () => void }) => {
         {/* Left Content */}
         <div>
           <motion.div
-            className="md:max-w-[35rem] flex z-20 flex-col items-start gap-6"
+            className="lg:max-w-[35rem] flex z-20 flex-col items-start gap-6"
             variants={containerVariants}
           >
             <motion.h2
@@ -78,7 +78,10 @@ const HeroSection = ({ openPopup }: { openPopup: () => void }) => {
         </div>
 
         {/* Right Video */}
-        <motion.div className="w-full md:h-[500px] z-10" variants={fadeUp}>
+        <motion.div
+          className="w-full lg:max-h-[400px] h-[400px] z-10"
+          variants={fadeUp}
+        >
           <div className="relative w-full h-full aspect-video rounded-lg overflow-hidden shadow-lg">
             {!isPlaying ? (
               <div
