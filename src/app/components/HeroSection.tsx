@@ -54,8 +54,12 @@ const HeroSection = ({ openPopup }: { openPopup: () => void }) => {
             >
               India&apos;s #1 Choice for{" "}
               <span className="bg-gradient-to-b from-white to-[#B5B5B5] bg-clip-text text-transparent">
-                High-Converting Videos
+                High-Converting Video Production
               </span>
+              {/* India&apos;s #1 Choice for{" "}
+              <span className="bg-gradient-to-b from-white to-[#B5B5B5] bg-clip-text text-transparent">
+                High-Converting Videos
+              </span> */}
             </motion.h2>
 
             <motion.p
@@ -63,8 +67,9 @@ const HeroSection = ({ openPopup }: { openPopup: () => void }) => {
               variants={fadeUp}
             >
               We transform your brand story into powerful visual content that
-              speaks to your audience, builds trust, and drives action. Trusted
-              by 500+ brands across India.
+              speaks to your audience. Trusted by 500+ brands across India for
+              corporate video production, industrial walkthroughs, and cinematic
+              storytelling.
             </motion.p>
 
             <motion.button

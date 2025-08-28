@@ -25,8 +25,10 @@ const Footer = ({ openPopup }: { openPopup: () => void }) => {
             Ready to Transform Your Story?
           </h2>
           <p className="text-[15px] md:text-[16px] lg:text-[18px] text-[#ffffffcc] mt-4 leading-relaxed wrapText">
-            Let’s collaborate to craft videos that not only captivate but also
-            convert. Elevate your brand with compelling visuals.
+            Let&apos;s create videos that don&apos;t just look amazing, they
+            deliver results. From corporate training videos to 3d walkthrough
+            productions, we&apos;re your trusted video production agency
+            partner.
           </p>
           <button
             onClick={openPopup}

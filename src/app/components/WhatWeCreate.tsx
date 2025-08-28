@@ -89,7 +89,8 @@ const WhatWeCreate: FC = () => {
               What We Create
             </h2>
             <p className="mt-2 text-[15px] md:text-[16px] lg:text-[18px] text-white font-normal leading-[160%] wrapText">
-              From industrial showcases to cinematic campaigns, we bring your
+              From industrial showcases and corporate video production to
+              cinematic campaigns and product explainer videos, we bring your
               vision to life through powerful visual storytelling.
             </p>
           </div>

@@ -97,15 +97,17 @@ export default function BrandVideoSection({
 
             <p className="hPara mt-2">
               While others create videos, we engineer visual experiences that
-              drive growth. Our unique blend of cinematic storytelling and
-              marketing strategy ensures every frame delivers measurable impact
-              for your brand.
+              drive growth as a leading video production company in Pune. Our
+              unique blend of cinematic storytelling and marketing strategy
+              ensures every frame delivers measurable impact for your brand.
             </p>
             <p className="hPara">
-              We don&apos;t just create videos for our clients, we become
-              strategic partners in their success story. That&apos;s why
-              industry leaders trust us to turn their boldest ideas into their
-              biggest wins.
+              From corporate video production to industrial walkthroughs, we
+              don&apos;t just create videos for our clients, we become strategic
+              partners in their success story. Whether you need explainer video
+              production, safety training videos, or commercial video
+              production, industry leaders trust us to turn their boldest ideas
+              into their biggest wins.
             </p>
 
             <button
