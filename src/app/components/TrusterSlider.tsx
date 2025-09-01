@@ -114,7 +114,7 @@ const TrusterSlider: React.FC = () => {
   return (
     <section className="rm bg-white max">
       <div className="max pad text-center">
-        <h2 className="h2Text">Proven Track Record of Visual Excellence</h2>
+        <h2 className="h2Text">Join the Brands Who Trust Our Vision</h2>
         <p className="mt-2 hPara wrapText ">
           Serving startups to Fortune 500 companies, from industrial video
           production showcases to cinematic brand stories, we consistently
