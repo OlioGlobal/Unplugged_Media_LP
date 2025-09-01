@@ -116,9 +116,9 @@ const TrusterSlider: React.FC = () => {
       <div className="max pad text-center">
         <h2 className="h2Text">Join the Brands Who Trust Our Vision</h2>
         <p className="mt-2 hPara wrapText ">
-          Serving startups to Fortune 500 companies, from industrial video
-          production showcases to cinematic brand stories, we consistently
-          deliver results that matter.
+          Delivering excellence across industries, from emerging brands to
+          market leaders seeking professional video production company
+          expertise.
         </p>
       </div>
 

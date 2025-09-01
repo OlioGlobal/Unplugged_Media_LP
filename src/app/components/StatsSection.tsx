@@ -62,9 +62,9 @@ const StatsSection: React.FC = () => {
           transition={{ duration: 1, ease: [0.25, 0.8, 0.25, 1], delay: 0.1 }}
           viewport={{ once: true }}
         >
-          Serving startups to Fortune 500 companies, from industrial showcases
-          to cinematic brand stories, we consistently deliver results that
-          matter.
+          Serving startups to Fortune 500 companies, from industrial video
+          production showcases to cinematic brand stories, we consistently
+          deliver results that matter.
         </motion.p>
 
         {/* Stats Grid */}
